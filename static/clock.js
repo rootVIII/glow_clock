@@ -18,13 +18,13 @@ class GlowClock {
         this.clock = 0;
         this.hue = '#1A75FF';
         this.center = 186;
-        this.mTheta = 360;
+        this.theta = 360;
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
     }
 
     updateMinute() {
-        this.mTheta = this.timeTable[new Date().getMinutes()];
-        let mRadians = this.mTheta * (Math.PI / 180);
+        this.theta = this.timeTable[new Date().getMinutes()];
+        let mRadians = this.theta * (Math.PI / 180);
         let cos = Math.cos(mRadians);
         let sin = Math.sin(mRadians);
         return {
@@ -66,8 +66,8 @@ class GlowClock {
 
         let hourLookup = ((now.getHours() % 12) * 5) + interval;
 
-        this.mTheta = this.timeTable[hourLookup];
-        let hRadians = this.mTheta * (Math.PI / 180);
+        this.theta = this.timeTable[hourLookup];
+        let hRadians = this.theta * (Math.PI / 180);
         let cos = Math.cos(hRadians);
         let sin = Math.sin(hRadians);
         return {
