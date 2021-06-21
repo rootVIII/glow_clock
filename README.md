@@ -1,7 +1,7 @@
 ###### Just another Javascript clock
 
 
-<img src="https://github.com/rootVIII/glow_clock/blob/master/screenshot.png" alt="example1" height="675" width="950"><hr>
+<img src="https://github.com/rootVIII/glow_clock/blob/master/screenshot.png" alt="example"><hr>
 
 
 <b>web browser:</b><br><br>
