@@ -93,7 +93,7 @@ class GlowClock {
     }
 
     clear() {
-        this.ctx.clearRect(0, 0, this.w, this.h);
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
 
     run() {
