@@ -116,9 +116,8 @@ class GlowClock {
     }
 }
 
-/* eslint-disable no-unused-vars */
+/* eslint-disable-next-line no-unused-vars */
 function startClock() {
-    /* eslint-enable no-unused-vars */
     const gc = new GlowClock(373, 373);
     gc.run();
 }
